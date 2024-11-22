@@ -1,0 +1,96 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #008080;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-links ul {
+  display: flex;
+  gap: 2rem; /* Add space between the links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Add padding for clickable area */
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px; /* Add rounded corners for hover effect */
+}
+
+.nav-links ul li a:hover {
+  background-color: #ffd700; /* Highlight link on hover */
+  color: #005757; /* Change text color on hover */
+}
+
+/* Toggle Button */
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #005757;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .toggle {
+    display: block;
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,60 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  
+  .about_left img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about_left img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about_right {
+    max-width: 600px;
+  }
+  
+  .about_right h2 {
+    color: #008080;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about_right h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .about_right p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .about_right button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about_right button:hover {
+    background-color: #005757;
+  }
+  
